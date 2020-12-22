@@ -17,7 +17,7 @@ function parseCookie(cookie) {
     var list = cookie.split(';');
     for (var i = 0; i < list.length; i++) {
         var pair = list[i].split('=');
-        cookies[pair[0].trim()] = pari[1];
+        cookies[pair[0].trim()] = pair[1];
     }
     return cookies
 }
